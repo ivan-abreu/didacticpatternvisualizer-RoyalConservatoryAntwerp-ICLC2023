@@ -1,6 +1,6 @@
 ##### *Improvement test, thinking about version 2* ...
 # Didactic pattern visualizer for Tidal Cycles 
-### **Royal Conservatory Antwerp** | Live Coding Workshop with **Tidal Cycles**
+### **Royal Conservatory Antwerp** | Live Coding Workshop
 #### by **Malitzin Cortes (CNDSD)** and **Ivan Abreu**
 #
 

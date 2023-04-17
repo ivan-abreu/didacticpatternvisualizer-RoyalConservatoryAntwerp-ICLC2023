@@ -1,0 +1,45 @@
+-- ------------------------------------------- --
+-- Number el division in grid --
+
+d5 $ grid "1 1 1 1"
+
+d5 $ grid "1!4"
+
+
+d5 $ grid "1 1 1 1 1 1 1 1"
+
+d5 $ grid "1!8"
+
+
+-- ------------------------------------------- --
+-- visual custom grid (stroke weight and color)--
+
+d5 $ grid "1 1 1 1" # gridweight "3 0.8 1 0.8"
+
+d5 $ grid "1 1 1 1" # gridweight "3 0.8 1 0.8" # color "000000 ff0000!3"
+
+-- ---------------------------------- --
+-- speed of animation (rigth to left) --
+-- default value: 2
+asap $ speedSequenser 4
+
+-- ---------------------------------- --
+-- number os tracks (rigth to left) --
+-- default value: 4
+asap $ connectionMax 4
+
+-- ---------------------------------- --
+-- clear visual sequencer --
+asap $ clear 1
+
+-- ---------------------------------- --
+-- d1 visualize in  track 1--
+d1 $ s "bd(3,4)"
+
+-- d1 visualize in  track 1--
+d2 $ s "~ cp*8" # gain 0.6
+
+d1 $ s "bd*4 [superhat*2,[~ bass]]"
+
+
+hush

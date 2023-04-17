@@ -5,7 +5,7 @@
 
 ```haskell
 
--- didactic pattern visualizer  
+-- didactic pattern visualizer
 -- testing on TidalCycles 3.16.17
 
 import Sound.Tidal.Context
@@ -23,7 +23,8 @@ let  targetdpv = Target {oName = "didacticpatternvisualizer",
      oscmapdpv = [(targetdpv, formatsdpv),
                  (superdirtTarget, [superdirtShape])
                  ]
-     grid = pS "grid"
+     grid = pI "grid"
+     gridweight = pF "gridweight"
      connectionN = pI "connectionN"
      connectionMax = pI "connectionMax"
      speedSequenser = pF "speedSequenser"
@@ -34,12 +35,7 @@ let  targetdpv = Target {oName = "didacticpatternvisualizer",
      color = pS "color"
 
 
--- this line returns a warning, but it is necessary
 tidal <- startStream defaultConfig oscmapdpv
-
--- total latency = oLatency + cFrameTimespan
--- tidal <- startTidal (superdirtTarget {oLatency = 0.1, oAddress = "127.0.0.1", oPort = 57120}) (defaultConfig {cVerbose = True, cFrameTimespan = 1/20})
-
 
 let only = (hush >>)
     p = streamReplace tidal
@@ -102,6 +98,7 @@ let getState = streamGet tidal
     setS = streamSetS tidal
     setR = streamSetR tidal
     setB = streamSetB tidal
+
 
 ``` 
 

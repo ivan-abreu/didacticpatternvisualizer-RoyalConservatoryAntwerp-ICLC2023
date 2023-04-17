@@ -1,4 +1,8 @@
-# Didactic pattern visualizer for Tidal Cycles (Improvement test, thinking about version 2) 
+##### *Improvement test, thinking about version 2* ...
+# Didactic pattern visualizer for Tidal Cycles 
+### **Royal Conservatory Antwerp** | Live Coding Workshop with **Tidal Cycles**
+#### by **Malitzin Cortes (CNDSD)** and **Ivan Abreu**
+#
 
 Sound pattern visualizer programmed in Processing by the artist Ivan Abreu to study the potential and complexity of the syntax of the pattern system for sequencing <b>Tida Cycles</b> sounds, it is also a useful tool for composing having visual feedback of ordering and sound intentions and can be a fun visual software during the live act to unfold the musical composition and with them emphasize and direct attention to the subtleties that are semi-hidden in the multiple layers created by the artist.
 

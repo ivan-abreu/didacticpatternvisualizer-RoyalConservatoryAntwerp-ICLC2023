@@ -18,11 +18,11 @@ Musical pattern example:
 
 do
   asap $ connectionMax 3 # speedSequenser 4
-  d5 $ grid "1 0!15"
-  d1 $ s "bd(3,8)" # connectionN 1
-  d2 $ s "hh(6,8)" # connectionN 2
+  d5 $ grid "1!16"
+  d1 $ s "bd(3,8)"
+  d2 $ s "hh(6,8)"
   d3 $ every 3 ( density 8 ) $ density 2 $ n "<[d4,e2,g2] [d4,e4,g2]?>" 
-     # s "superfork"  # connectionN 3
+     # s "superfork"
 
 ```
 
@@ -37,7 +37,7 @@ Code from previous video by <b>CNDSD</b>, using only defaults samples of TidalCy
 ```haskell
 do
  asap $ connectionMax 5 # speedSequenser 2
- d5 $ slow 0.75 $ grid "1 0!8"
+ d5 $ slow 0.75 $ grid "1!9"
  d1 $ qtrigger 1 $ seqPLoop [
     (0,8, slow 0.75 $ cat [
     sometimesBy 0.15 (#crush 6)$ s "[bd(5,9),[superhat(2,9)]/2]"
@@ -144,8 +144,8 @@ You'll need put the function <b># connectionN n</b>, where <b>n</b> is the numbe
 
 do
   asap $ connectionMax 2 # speedSequenser 4
-  d5 $ grid "1 0 0 0"
-  d1 $ s "bd cp" # connectionN 1
+  d5 $ grid "1 1 1 1"
+  d1 $ s "bd cp"
 
 ```
 
@@ -158,7 +158,7 @@ do
 do
   asap $ connectionMax 2 # speedSequenser 4
   d5 $ grid "1 0 0 0 0 0 0 0"
-  d1 $ s "bd cp*4" # connectionN 1
+  d1 $ s "bd cp*4"
 
 ```
 
@@ -171,8 +171,8 @@ do
 do
   asap $ connectionMax 2 # speedSequenser 4
   d5 $ grid "1 0!7"
-  d1 $ s "bd(3,8)" # connectionN 1
-  d2 $ s "hh(6,8)" # connectionN 2
+  d1 $ s "bd(3,8)"
+  d2 $ s "hh(6,8)"
 
 ```
 
@@ -186,8 +186,8 @@ do
   asap $ qtrigger 1 $ connectionMax 2 # speedSequenser 2
   d5 $ grid "1 0!15"
   d1 $ note "{0!8 3 2!8 4 3 3 2!4}%16" # sound "bd" # gain (range 1.1 0.4 saw)
-     # cps (slow 16 (range 2 0.125 saw)) # connectionN 1
-  d2 $ note "0(5,16)" # sound "superhat" # gain (range 1.1 0.4 saw) # connectionN 2
+     # cps (slow 16 (range 2 0.125 saw))
+  d2 $ note "0(5,16)" # sound "superhat" # gain (range 1.1 0.4 saw)
   
 ```
 

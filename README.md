@@ -191,7 +191,18 @@ do
   
 ```
 
+<dl>
+  <br>
+</dl>
 
+### Workshop at HKU Design | Games en Interactie | Muziek en Technologie | HKU X , Utrecht, Nederland
+
+[![SC2 Video](https://livecinemacoding.xyz/images/workshop-livecinemacoding-participants-play.jpg)](https://livecinemacoding.xyz/videos/workshop-livecinemacoding-participants.mp4 "Click to play >") 
+###### Ensemble of the participants improvising through the network on the same projection
+
+<dl>
+  <br>
+</dl>
 
 ### Contact or reports
 
